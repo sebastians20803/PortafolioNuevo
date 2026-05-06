@@ -1,0 +1,96 @@
+:root{
+    --colorR: gradia
+
+
+}
+body{
+    margin: 0px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    height: 100vh;
+    
+}
+
+#header{
+    height: 7%;
+    background: black;
+    display: grid;
+   
+}
+
+
+
+#header_opciones a{
+    font-size: 1.5rem;
+    margin-right: 1.2vw;
+    color: white;
+    text-decoration: none;
+    position: relative;
+    left: 6vw;
+}
+
+#header_opciones a:first-child {
+    text-decoration: underline;
+    color: red;
+
+}
+
+#header_opciones a:hover{
+    color: red;
+    text-decoration: underline;
+
+}
+
+#gallery {
+    margin-top: 0%;
+    background-image: url(./Imagenfondomain.PNG) ;
+    background-position: center;
+
+    height:  93%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    
+}
+
+#div_titulo{
+    width: 35w;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+
+}
+.cajas-main {
+    height: 20vh;
+    width: 18vw;
+    position: relative;
+    bottom: 7vh;
+    text-align: center;
+
+}
+
+.titulo_principal {
+    font-size: 3rem;
+    color: rgb(45, 44, 49);
+   
+    margin: 0%;
+}
+.titulo_principal span {
+    color: red;
+
+}
+
+#redes {
+    height: 10vh;
+    width: 30%;
+
+}
+
+
+
+#iconos {
+
+    height: 100%;
+    width: 100%;
+
+}
