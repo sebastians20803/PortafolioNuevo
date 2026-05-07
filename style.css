@@ -1,7 +1,12 @@
 :root{
-    --colorR: gradia
-
-
+    --color-yellow: #F6B938;
+    --color-red: #E84644;
+    --color-lightblue: #A8D1D2;
+    --color-black: #08090A;
+    --color-blue: #246EB9;
+    --size-h1: 3rem;
+    --color-pink: #fEEEEC;
+    --font: "Saira", sans-serif;
 }
 body{
     margin: 0px;
@@ -14,44 +19,62 @@ body{
     height: 7%;
     background: black;
     display: grid;
-   
+    position: sticky;
+    top: 0;
+    grid-template-columns: repeat(3,1fr);
 }
 
+#header_opciones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
 #header_opciones a{
     font-size: 1.5rem;
-    margin-right: 1.2vw;
     color: white;
     text-decoration: none;
-    position: relative;
-    left: 6vw;
+    margin-right: 1rem;
+
 }
+
+
+
 
 #header_opciones a:first-child {
     text-decoration: underline;
-    color: red;
+    color: var(--color-red);
 
 }
 
 #header_opciones a:hover{
-    color: red;
+    color: var(--color-red);
     text-decoration: underline;
 
 }
 
 #gallery {
+  
+
+    height:  93%;
+   
+}
+
+#sec-principal{
     margin-top: 0%;
     background-image: url(./Imagenfondomain.PNG) ;
     background-position: center;
-
-    height:  93%;
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: center; 
+    width: 93wd;
+    height: 93vh;
+    border-bottom: 3px solid var(--color-black);
 
-    
 }
+
+
 
 #div_titulo{
     width: 35w;
@@ -70,27 +93,194 @@ body{
 }
 
 .titulo_principal {
-    font-size: 3rem;
+    font-size: var(--size-h1);
     color: rgb(45, 44, 49);
    
     margin: 0%;
 }
 .titulo_principal span {
-    color: red;
+    color: var(--color-red);
 
 }
 
-#redes {
-    height: 10vh;
-    width: 30%;
+#sec-second {
+    width: 93wd;
+    height: 93vh;
+    margin-top: 0px;
+    display: flex;
+    background-image: url(./fondothird.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: 3px solid var(--color-black);
+}
 
+.second-box{
+    display: flex;
+    flex-direction: column;
+    height: 93vh;
+    align-items: center;
+    width: 50%;
+    justify-content: center;
+}
+#second-box-izq {
+
+    position: relative;
+    left: 6vw;
+}
+
+#second-box-der {
+
+    position: relative;
+    right: 6vw;
+}
+.second-box h1{
+
+ font-size: var(--size-h1);
+}
+
+#foto-about {
+
+    height: 40vh;
+    width: 20vw;
+    border: 1px solid var(--color-black);
+    border-radius: 10%;
+    background-image: url(./ImagenFront1-removebg-preview.png);
+    background-size: cover;
+    background-position: 50% 20%;
+    background-repeat: no-repeat;
 }
 
 
 
-#iconos {
+#about-me{
+    font-size: 2.6vh;
+    margin: 0 9vw;
+    width: 30vw;
+}
+#cajas-experiencia{
+    display: flex;
+    justify-content: space-between;
 
+    
+
+}
+#about_me-experiencia{
+    height: 9vh;
+    width: 30vw ;
+    
+}
+
+
+#about_me-experiencia div {
     height: 100%;
-    width: 100%;
+    width: 6vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+}
 
+.about_experiencia-each p{
+    font-size: 1.4rem;
+    font-weight: bold;
+    align-self: top;
+    padding: 0px;
+    margin: 0px;
+}
+
+.about_experiencia-each h1{
+    margin: 0;
+    color: #E84644;
+}
+
+
+#sec-third {
+    width: 93wd;
+    height: 93vh;
+    margin-top: 0px;
+    background-image: url(./fondosecond.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: 3px solid var(--color-black);
+
+}
+
+
+#sec-fourth {
+    width: 93wd;
+    height: 93vh;
+    margin-top: 0px;
+    display: flex;
+    background-image: url(./fondofourth.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: 3px solid var(--color-black);
+}
+
+#sec-third {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#sec-third h1{
+
+    font-size: var(--size-h1);
+
+}
+
+
+#skills {
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.caja-skills {
+    height: 30vh;
+    width: 25%;
+    border: 3px solid whitesmoke;
+    background-color: var(--color-pink);
+    border-radius: 20%;
+}
+
+.skill {
+    margin: 18px 45px;
+  }
+
+.skill h1{
+    margin: 0px;
+    margin-bottom: 10px;
+    font-size: 100px;
+}
+.skill-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+   
+  }
+  
+  .bar {
+    border-radius: 10px;
+    height: 1rem;
+    background: #e0e0e0;   /* fondo gris */
+  }
+  
+  .bar-fill {
+    border-radius: 10px;
+    height: 1rem;
+    background: #111;      /* barra negra */
+  }
+
+.skill-header span {
+    font-size: 0.9rem;
+    font-family: "Saira", sans-serif;
 }
