@@ -364,6 +364,13 @@ SECCION ----- 2
         border-left: 6px solid var(--color-red);
     }
 
+    .caja-skills:hover {
+        box-shadow: 0.8rem 0.8rem 2rem red;
+        transform: translateY(2rem) scale(1.1); 
+
+    }
+
+
     .skill {
         margin: 1.2rem 2rem;
         
@@ -440,7 +447,16 @@ SECCION ----- 2
         margin: 0px;
         margin-left: 8rem;
     }
+    #title-fourth h1::after {  
+        content: '|';
+        color: #e00;
+        animation: blink 1.5s step-end infinite;
+      }
 
+    @keyframes blink {
+
+        50% { opacity: 0; }
+    }
     #orden-fourth {
         margin: 0 0 0.5rem 8rem;
         font-size: 1.2rem;
@@ -503,8 +519,29 @@ SECCION ----- 2
         position: relative;
         z-index: 1;      
         margin-top: 3px;
+        
+    }
+
+    .dot::after {
+        content: '';
+        width: 1rem;
+        height: 1rem;
+        position: absolute;
+        border-radius: 50%;
+        background: #e00;
+        animation: pulsar 3s ease-out infinite;
+
 
     }
+
+    @keyframes pulsar {
+        0%  { transform: scale(1); opacity: 0.5; }
+        100%{ transform: scale(3); opacity: 0; }
+
+    }
+
+
+
     .edu-year {
         font-family: 'Courier New', monospace;
         font-size: 1.2rem;
@@ -558,8 +595,13 @@ SECCION ----- 2
         
         background-color: var(--fondo-blanco);
         padding: 0.8rem;
+        transition: transform 0.25s ease;
     }
 
+    
+    .certificados-contenedores:hover {
+        transform: translateY(-5px);
+      }
     .certificados-contenedores h3{
         justify-self: center;
         color: var(--color-red);
@@ -582,6 +624,7 @@ SECCION ----- 2
 
     }
 
+    
 
 
     #certificados-platzi a{
@@ -658,8 +701,13 @@ SECCION ----- 2
         border: 1px solid rgb(189, 189, 189);
         border-left: 4px solid var(--color-red);
         padding: 2.5rem;
+        background-color: var(--fondo-blanco);
     }
+    .caja-five:hover {
+        box-shadow: 0.8rem 0.8rem 2rem red;
+        transform: translateY(0.5rem) scale(1.1); 
 
+    }
     .caja-five h3,
     .caja-five h4,
     .caja-five p {
@@ -934,8 +982,12 @@ SECCION ----- 2
     #sec-seven{
         justify-content: space-between;
     }
-
-}
+    .caja-skills:hover {
+            box-shadow: 0.8rem 0.8rem red;
+            transform: translateY(2rem) scale(1.1); 
+    
+        }
+    }
 
 
 
@@ -1160,6 +1212,12 @@ SECCION ----- 2
         justify-content: space-between;
         font-size: 0.6rem;
         
+    }
+
+    .caja-skills:hover {
+        box-shadow: 0.4rem 0.4rem red;
+        transform: translateY(0rem) scale(1); 
+
     }
 
 
@@ -1713,7 +1771,11 @@ SECCION ----- 2
         
     }
 
+    .caja-skills:hover {
+        box-shadow: 0.4rem 0.4rem red;
+        transform: translateY(0) scale(1); 
 
+    }
     
 
 
